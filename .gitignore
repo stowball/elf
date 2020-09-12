@@ -1,0 +1,6 @@
+/dist/
+/node_modules/
+/src/compiled-assets/
+
+.DS_Store
+Thumbs.db

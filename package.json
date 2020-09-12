@@ -1,0 +1,53 @@
+{
+  "name": "elf",
+  "version": "1.0.0",
+  "description": "An Eleventy starter kit",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build:assets": "webpack --config webpack.config.prod.js",
+    "build:site": "ELEVENTY_ENV=production npx eleventy",
+    "del:dist": "rimraf ./dist",
+    "dev": "npm run dev:assets & npm run dev:site",
+    "dev:assets": "webpack --config webpack.config.dev.js",
+    "dev:site": "ELEVENTY_ENV=development npx eleventy --serve",
+    "prod": "npm-run-all del:dist build:assets build:site",
+    "serve:prod": "serve ./dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/stowball/elf.git"
+  },
+  "author": "Matt Stow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stowball/elf/issues"
+  },
+  "homepage": "https://github.com/stowball/elf#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "0.11.0",
+    "@babel/core": "7.11.6",
+    "@babel/preset-env": "7.11.5",
+    "autoprefixer": "9.8.6",
+    "babel-loader": "8.1.0",
+    "core-js": "3.6.5",
+    "css-loader": "4.2.2",
+    "eslint": "7.8.1",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-plugin-import": "2.22.0",
+    "fibers": "5.0.0",
+    "html-minifier": "4.0.0",
+    "md5-file": "5.0.0",
+    "mini-css-extract-plugin": "0.11.0",
+    "npm-run-all": "4.1.5",
+    "optimize-css-assets-webpack-plugin": "5.0.4",
+    "postcss-loader": "4.0.1",
+    "rimraf": "3.0.2",
+    "sass": "1.26.10",
+    "sass-loader": "10.0.2",
+    "serve": "11.3.2",
+    "terser-webpack-plugin": "4.1.0",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "webpack-merge": "5.1.3"
+  }
+}
