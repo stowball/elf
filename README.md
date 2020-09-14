@@ -11,7 +11,7 @@
 
 Elf is a simple, magical [Eleventy](https://www.11ty.dev/) starter kit to help you create a project using standard technologies like webpack, Babel and Sass, while also considering ease of use, performance and browser compatibility.
 
-If you'd like to know why Elf exists and how best to take advantage of it, read [Creating a production-ready Eleventy project with webpack, Babel and Sass](/tutorial.md).
+If you'd like to know why Elf exists and how best to take advantage of it, read [Creating a production-ready Eleventy project with webpack, Babel and Sass](https://dev.to/stowball/creating-a-production-ready-eleventy-project-with-webpack-babel-and-sass-35ep).
 
 ## Getting started
 
