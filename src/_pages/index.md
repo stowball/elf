@@ -3,7 +3,7 @@ title: My cool website
 layout: default.ejs
 ---
 
-# Hello, world
+# Hello, world</h1>
 
 Welcome to my website.
 

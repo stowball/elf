@@ -7,9 +7,12 @@
     <title><%= locals.title %></title>
     <meta name="description" content="Elf is a simple, magical Eleventy starter kit to help you create a project using standard technologies like webpack, Babel and Sass, while also considering ease of use, performance and browser compatibility." />
     <link rel="stylesheet" href="/assets/main.css?<%- cacheBust.mainCss %>" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
   </head>
   <body>
-    <%- content -%>
+    <main>
+      <%- content -%>
+    </main>
     <script src="/assets/vendor.js?<%- cacheBust.vendorJs %>"></script>
     <script src="/assets/main.js?<%- cacheBust.mainJs %>"></script>
   </body>
