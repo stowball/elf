@@ -708,7 +708,7 @@ module.exports = {
 };
 ```
 
-And update `webpack.config.common.js` to add the following as the last item in the `.scss` `use` array:
+And update `webpack.config.common.js` to add the following before the `loader: 'sass-loader'` item `.scss` `use` array:
 
 ```js
 {

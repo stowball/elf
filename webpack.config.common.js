@@ -34,6 +34,9 @@ module.exports = {
             },
           },
           {
+            loader: 'postcss-loader',
+          },
+          {
             loader: 'sass-loader',
             options: {
               // eslint-disable-next-line global-require
@@ -43,9 +46,6 @@ module.exports = {
                 outputStyle: 'expanded',
               },
             },
-          },
-          {
-            loader: 'postcss-loader',
           },
         ],
       },
